@@ -3,6 +3,7 @@
 namespace Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
+use App\Http\Controllers\SumaController;
 
 class ExampleTest extends TestCase
 {
@@ -18,7 +19,8 @@ class ExampleTest extends TestCase
      * Test if the sum of two numbers is correct.
      */
     public function test_sum_of_two_numbers(): void
-    {
+    {   
+        $sumaController = app(SumaController::class);
         $sum = app('app/Http/Controllers/SumaController.php')->add(3+3);
         $this->assertEquals(6, $sum);
     }
