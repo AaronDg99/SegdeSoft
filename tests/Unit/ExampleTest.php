@@ -19,10 +19,7 @@ class ExampleTest extends TestCase
      */
     public function test_sum_of_two_numbers(): void
     {
-        $a = 2;
-        $b = 3;
-        $sum = $a + $b;
-
+        $sum = app('app/Http/Controllers/SumaController.php')->add(3+3);
         $this->assertEquals(6, $sum);
     }
 }
