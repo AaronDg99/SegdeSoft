@@ -21,7 +21,7 @@ class ExampleTest extends TestCase
     public function test_sum_of_two_numbers(): void
     {   
         $sumaController = app(SumaController::class);
-        $sum = app('app/Http/Controllers/SumaController.php')->add(3+3);
+        $sum = app('app/Http/Controllers/SumaController')->add(3,3);
         $this->assertEquals(6, $sum);
     }
 }
