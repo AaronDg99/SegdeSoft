@@ -79,6 +79,6 @@ class ExampleTest extends TestCase
         $sumaController = app(SumaController::class);
 
         // Aserción: Comprobar que la suma de 2 + 3 es menor que 10
-        $this->assertLessThan(10, $sumaController->add(2, 3));
+        $this->assertLessThan(10, $sumaController->add(20, 3));
     }
 }
